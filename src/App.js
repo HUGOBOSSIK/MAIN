@@ -1,6 +1,7 @@
 import './Responsive.css';
 import './App.css';
-import React, {useState} from "react";
+import React from "react";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Header from "./Components/Header/Header";
 import Baner from "./Components/Baner/Baner";
 import Content from "./Components/Content/Content";
@@ -18,29 +19,37 @@ import Press from "./Components/Press/Press";
 import Quality from "./Components/Quality/Quality";
 import Footer from "./Components/Footer/Footer";
 import Modal from "./Components/Modal/Modal";
+import Cart from "./Components/Cart/Cart";
 
 
 function App() {
 
   return (
     <div className="App">
-     <Header/>
-     <Baner/>
-     <Content/>
-     <Goods/>
-     <Post/>
-     <Jewelry/>
-     <Hit_refresh/>
-     <Explore/>
-     <Show_Now/>
-     <Trending/>
-     <Materials/>
-     <Dog/>
-     <Like/>
-     <Press/>
-     <Quality/>
-     <Footer/>
-       <Modal/>
+        <Router>
+
+            <Header/>
+            <Routes>
+                <Route path='/cart' element={<Cart/>}/>
+            </Routes>
+            <Baner/>
+            <Content/>
+            <Goods/>
+            <Post/>
+            <Jewelry/>
+            <Hit_refresh/>
+            <Explore/>
+            <Show_Now/>
+            <Trending/>
+            <Materials/>
+            <Dog/>
+            <Like/>
+            <Press/>
+            <Quality/>
+            <Footer/>
+            <Modal/>
+
+        </Router>
     </div>
   );
 }

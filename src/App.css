@@ -7,7 +7,10 @@ img {
   width: auto;
   max-width: 100%;
 }
-
+.body.modal-open {
+  overflow: hidden;
+  position: relative;
+}
 /*HEADER*/
 
 .Header {
@@ -1286,7 +1289,86 @@ text-decoration: none;
   background: #ff7231;
 }
 
+.modal_list {
+  display: flex;
+}
+.modal_list li {
+  list-style: none;
+}
 
+/*CART*/
+.Cart {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  background:#E9E6DD;
+  top: 0;
+  right: 0;
+  transition: 0.5s all ease-in-out;
+  position: fixed;
+  bottom: 0;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.Cart li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  color: black;
+}
+.cart_list button{
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: #000000;
+  color: white;
+  font-size: 18px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  margin-left: 15px;
+}
+.cart_list button:hover {
+  color: gold;
+}
+.Cart_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Cart_text a {
+  text-decoration: none;
+  color: black;
+  transition: 0.4s all;
+  font-size: 20px;
+  line-height: 25px;
+  padding-top: 30px;
+}
+.Cart_text a:hover {
+  color: red;
+}
+.Cart_text button {
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: #000000;
+  color: white;
+  font-size: 16px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  margin-left: 15px;
+}
+.Cart_text button:hover {
+  color: gold;
+}
+/*CART*/
 
 
 
