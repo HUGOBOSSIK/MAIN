@@ -128,13 +128,14 @@
         flex-direction: row-reverse;
     }
     .modal_box {
-        display: none;
+        display: block;
     }
     HTML .responsive_menu {
         display: block;
         color: black;
         font-size: 15px;
         cursor: pointer;
+        padding-left: 20px;
 
     }
     .responsive_menu svg {
@@ -376,6 +377,12 @@
     }
     .Show_now .show_now_text {
         padding: 40px;
+    }
+    .logo_box {
+        display: flex;
+        align-content: flex-start;
+
+        align-items: center;
     }
 }
 @media (max-width: 767px){

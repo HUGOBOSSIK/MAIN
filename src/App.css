@@ -90,7 +90,7 @@ img {
   justify-content: center;
   padding: 85px 0;
   cursor: default;
-
+  text-align: center;
 }
 .title_baner h1 {
   font-weight: 400;

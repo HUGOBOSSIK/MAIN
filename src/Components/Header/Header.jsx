@@ -47,6 +47,9 @@ const Header = () => {
                             <a href="/">
                                 <img src={Logo} alt="Logo"/>
                             </a>
+                            <div className="responsive_menu" onClick={handleMenuClick}>
+                                <FontAwesomeIcon icon={menuActive ? faTimes : faBars} />
+                            </div>
                         </div>
                         <div className="nav_box">
                             <nav className="menu">
@@ -79,9 +82,7 @@ const Header = () => {
                             </nav>
                         </div>
 
-                        <div className="responsive_menu" onClick={handleMenuClick}>
-                            <FontAwesomeIcon icon={menuActive ? faTimes : faBars} />
-                        </div>
+
 
                         <div className={`menu_items ${menuActive ? 'active' : ''}`}>
                             <div className="menu_close" onClick={handleCloseClick}>
@@ -139,6 +140,7 @@ const Header = () => {
                                     </Link>
                                 </li>
                             </ul>
+
                         </div>
                     </div>
                 </div>
@@ -147,5 +149,4 @@ const Header = () => {
 
     }
 
-
-    export default Header;
+export default Header;
